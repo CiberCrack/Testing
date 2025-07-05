@@ -36,24 +36,22 @@ public class Main {
       FoodFactory japaneseFactory = foodFactory.createFood(new JapaneseCuisine());
 
 
-      switch (mexicanFactory.getDish()) {
+      switch (cuisines[0]) {
         case "Mexican":
           System.out.println("Serving Mexican food: " + mexicanFactory.servingFood());
           break;
         case "Italian":
-          count++;
-          System.out.println("Serving Italian food: " + mexicanFactory.servingFood());
+          System.out.println("Serving Italian food: " + chineseFactory.servingFood());
           break;
         case "Chinese":
-          System.out.println("Serving Chinese food: " + mexicanFactory.servingFood());
+          System.out.println("Serving Chinese food: " + italianFactory.servingFood());
           break;
         case "Japanese":
-          System.out.println("Serving Japanese food: " + mexicanFactory.servingFood());
+          System.out.println("Serving Japanese food: " + japaneseFactory.servingFood());
           break;
       }
 
     }
-
 
     System.out.println("The number of times 'Italian' appears is: " + count);
 
